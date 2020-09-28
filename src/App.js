@@ -3,7 +3,7 @@ var React = require("react");
 var Component = React.Component;
 
 //var CanvasJSReact = require('./canvasjs.react');
-var CanvasJS = CanvasJSReact.CanvasJS;
+let CanvasJS = CanvasJSReact.CanvasJS;
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 class App extends Component {
