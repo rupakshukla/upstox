@@ -18,9 +18,11 @@
     "react-dom": "^16.13.1",
     "react-loader-spinner": "^3.1.14",
     "react-router-dom": "5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "serve": "^11.3.2"
   },
   "scripts": {
+    "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
