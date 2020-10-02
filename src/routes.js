@@ -7,7 +7,7 @@ import Typography from "../src/views/Typography/Typography.js";
 const dashboardRoutes = [
   {
     path: "/dashboard",
-    name: "Home",
+    name: "Historical Chart",
     icon: Dashboard,
     component: DashboardPage,
     layout: "/admin",
