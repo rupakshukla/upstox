@@ -10,7 +10,7 @@ export default function Live() {
   const [showFlag, setShowFlag] = React.useState(false);
   const [chartData, setChartData] = React.useState(chartDefaultOptions);
   useEffect(() => {
-    callHistorical();
+    //callHistorical();
     subscribeLive();
   }, []);
 
@@ -26,7 +26,9 @@ export default function Live() {
   };
   const subscribeLive = () => {
     const socket = io("http://kaboom.rksv.net");
-    socket.emit("sub", { state: true });
+    socket.on("connect", function (res) {
+      socket.emit("sub", { state: true });
+    });
     socket.on("data", function (data) {
       console.log(data);
     });
