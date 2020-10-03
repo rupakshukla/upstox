@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "../../components/Card/Card.js";
 import CardHeader from "../../components/Card/CardHeader.js";
 import CardBody from "../../components/Card/CardBody.js";
+import Live from "../../components/Live/Live.js";
 
 const styles = {
   typo: {
@@ -50,16 +51,13 @@ export default function TypographyPage() {
   return (
     <Card>
       <CardHeader color="primary">
-        <h4 className={classes.cardTitleWhite}>Material Dashboard Heading</h4>
-        <p className={classes.cardCategoryWhite}>
-          Created using Roboto Font Family
-        </p>
+        <h3 className={classes.cardTitleWhite}>Live Chart</h3>
       </CardHeader>
       <CardBody>
         <div className={classes.typo}>
-          <div className={classes.note}>Header 1</div>
-          <h1>The Life of Material Dashboard</h1>
+          <h1>Historical Chart</h1>
         </div>
+        <Live></Live>
       </CardBody>
     </Card>
   );
