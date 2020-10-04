@@ -1,22 +1,22 @@
 import Dashboard from "@material-ui/icons/Dashboard";
 import LibraryBooks from "@material-ui/icons/LibraryBooks";
 
-import DashboardPage from "../src/views/Dashboard/Dashboard.js";
-import Typography from "../src/views/Typography/Typography.js";
+import HistoricalView from "../src/views/Historical/HistoricalView.js";
+import LiveView from "../src/views/Live/LiveView.js";
 
 const dashboardRoutes = [
   {
     path: "/historical",
     name: "Historical Chart",
     icon: Dashboard,
-    component: DashboardPage,
+    component: HistoricalView,
     layout: "/admin",
   },
   {
     path: "/live",
     name: "Live Chart",
     icon: LibraryBooks,
-    component: Typography,
+    component: LiveView,
     layout: "/admin",
   },
 ];

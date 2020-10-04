@@ -4,9 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import Card from "../../components/Card/Card.js";
 import CardHeader from "../../components/Card/CardHeader.js";
-import CardIcon from "../../components/Card/CardIcon.js";
 import CardBody from "../../components/Card/CardBody.js";
-import CardFooter from "../../components/Card/CardFooter.js";
 import Historical from "../../components/Historical/Historical.js";
 import HistoricalOHLC from "../../components/Historical/HistoricalOHLC.js";
 
@@ -14,7 +12,7 @@ import styles from "../../assets/jss/dashboardStyle.js";
 
 const useStyles = makeStyles(styles);
 
-export default function Dashboard() {
+export default function HistoricalView() {
   const classes = useStyles();
   return (
     <Card>

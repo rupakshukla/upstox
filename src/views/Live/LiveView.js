@@ -11,7 +11,7 @@ import styles from "../../assets/jss/dashboardStyle.js";
 
 const useStyles = makeStyles(styles);
 
-export default function TypographyPage() {
+export default function LiveView() {
   const classes = useStyles();
   return (
     <Card>

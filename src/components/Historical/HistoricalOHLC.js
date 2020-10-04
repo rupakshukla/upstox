@@ -102,7 +102,7 @@ export default class HistoricalOHLC extends React.Component {
   onFetchData() {
     Promise.all([dataFetch]).then((res) => {
       const data = this.processData(res[0]);
-      console.log(data);
+      //console.log(data);
       const schema = this.state.schema;
       const fusionTable = new FusionCharts.DataStore().createDataTable(
         data,

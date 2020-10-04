@@ -101,7 +101,7 @@ export default class Live extends React.Component {
     });
   };
   processData = (dataObj) => {
-    console.log("From WebSocket:->", dataObj);
+    //console.log("From WebSocket:->", dataObj);
     let obj = [];
     let splitData = dataObj.split(",");
     let date = moment.unix(splitData[0] / 1000);
@@ -113,8 +113,8 @@ export default class Live extends React.Component {
     obj.push(splitData[5]);
     this.state.dataPoints.push(obj);
 
-    console.log("Data Given To Graph:->", obj);
-    console.log("-------------------");
+    // console.log("Data Given To Graph:->", obj);
+    // console.log("-------------------");
 
     const data = this.state.dataPoints;
     const schema = this.state.schema;
