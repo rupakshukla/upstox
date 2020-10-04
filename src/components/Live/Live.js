@@ -14,7 +14,7 @@ const dataSource = {
     text: "",
   },
   subcaption: {
-    text: "Live Chart fetching data from socket every second.",
+    text: "Live Chart fetching data from socket.",
   },
   yaxis: [
     {
@@ -84,7 +84,7 @@ export default class Live extends React.Component {
       tempThis.processData(dataObj);
       setInterval(() => {
         callback(CLIENT_ACKNOWLEDGEMENT);
-      }, 1000);
+      }, 100);
     });
   }
   componentWillUnmount() {
