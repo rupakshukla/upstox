@@ -6,14 +6,14 @@ import Typography from "../src/views/Typography/Typography.js";
 
 const dashboardRoutes = [
   {
-    path: "/dashboard",
+    path: "/historical",
     name: "Historical Chart",
     icon: Dashboard,
     component: DashboardPage,
     layout: "/admin",
   },
   {
-    path: "/typography",
+    path: "/live",
     name: "Live Chart",
     icon: LibraryBooks,
     component: Typography,
